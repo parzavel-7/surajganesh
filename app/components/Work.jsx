@@ -57,8 +57,14 @@ const Work = ({ isDarkMode, setIsDarkMode }) => {
             transition={{ duration: 0.15 }}
             key={index}
             style={{ backgroundImage: `url(${project.bgImage})`, backgroundPosition: project.bgPos || 'center' }}
-            className="aspect-square bg-no-repeat bg-cover rounded-xl relative cursor-pointer group block"
+            className="aspect-square bg-no-repeat bg-cover rounded-xl relative cursor-pointer group block overflow-hidden"
           >
+            {project.tag && (
+              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-black px-3 py-1 rounded-full text-xs font-semibold shadow-sm">
+                {project.tag}
+              </div>
+            )}
+            
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex justify-between items-center duration-500 group-hover:bottom-7">
               <div>
                 <h2 className="font-semibold">{project.title}</h2>

@@ -1,9 +1,9 @@
-import { serviceData } from "@/assets/assets";
+import { serviceData, assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
-import { assets } from "@/assets/assets";
-import { motion } from "motion/react";
 import Link from "next/link";
+
+import { motion } from "motion/react";
 
 const Services = ({ isDarkMode, setIsDarkMode }) => {
   return (
@@ -47,7 +47,7 @@ const Services = ({ isDarkMode, setIsDarkMode }) => {
         transition={{ duration: 0.21, delay: 0.315 }}
         className="grid grid-cols-auto gap-6 my-10 "
       >
-        {serviceData.map(({ icon, title, description, link }, index) => (
+        {serviceData.map(({ icon, title, description, slug }, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
             key={index}
@@ -60,7 +60,7 @@ const Services = ({ isDarkMode, setIsDarkMode }) => {
             <p className="text-sm text-gray-600 leading-5 dark:text-white">
               {description}
             </p>
-            <Link href={link}>
+            <Link href={`/services/${slug}`}>
               <span className="flex items-center gap-2 text-sm mt-5 dark:text-white">
                 Read more
                 <Image src={assets.right_arrow} alt="" className="w-4" />

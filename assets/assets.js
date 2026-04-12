@@ -111,53 +111,97 @@ export const workData = [
     bgImage: "/work-1.png",
     bgPos: "center top",
     link: "https://fin-track-next.vercel.app/",
+    tag: "Web Development",
   },
   {
     title: "Oasis Watch",
     description: "Movie Site",
     bgImage: "/work-2.png",
     link: "",
+    tag: "Web Development",
   },
   {
     title: "Video Projects",
     description: "Video Editing",
     bgImage: "/work-3.png",
     link: "",
+    tag: "Video Editing",
   },
   {
     title: "Graphics designing",
     description: "Graphics Design",
     bgImage: "/work-4.png",
     link: "",
+    tag: "Graphics Design",
   },
 ];
 
 export const serviceData = [
   {
+    slug: "web-design",
     icon: assets.web_icon,
     title: "Web design",
     description: "Web development is the process of building, programming...",
-    link: "/service-details#web-design",
+    detailedDescription: "Transform your ideas into robust, scalable, and visually stunning websites. From single-page applications to complex platforms, I use industry-leading frameworks like Next.js and React to deliver seamless digital experiences.",
+    stats: { rating: "5.0", label: "(50+) successful projects", enrolled: "5+ Years Experience" },
+    tools: [assets.vscode, assets.git],
+    features: [
+      { title: "20+ Projects", subtitle: "Live Implementations" },
+      { title: "1-2 Months", subtitle: "Average Delivery Time" },
+      { title: "Responsive", subtitle: "Mobile-first Approach" }
+    ],
+    image: assets.web_development,
+    tag: "Web Development"
   },
   {
+    slug: "video-editing",
     icon: assets.video_icon,
     title: "Video Editing",
     description:
       "Professional video editing services using Premiere Pro and DaVinci Resolve...",
-    link: "/service-details#video-editing",
+    detailedDescription: "Learn professional video editing from scratch using industry-standard tools like DaVinci Resolve to create cinematic and engaging videos. I offer high-quality editing, color grading, and audio syncing.",
+    stats: { rating: "4.9", label: "(30+) reviews", enrolled: "100% Client Satisfaction" },
+    tools: [assets.davinci_resolve],
+    features: [
+      { title: "15+ Videos", subtitle: "Edited & Delivered" },
+      { title: "7 Days", subtitle: "Standard Turnaround" },
+      { title: "4K Quality", subtitle: "Export Resolution" }
+    ],
+    image: assets.mobile_app, 
+    tag: "Video Editing"
   },
   {
+    slug: "ui-ux",
     icon: assets.ui_icon,
     title: "UI/UX design",
     description:
       "UI/UX design focuses on creating a seamless user experience...",
-    link: "/service-details#ui-ux",
+    detailedDescription: "Creating intuitive interfaces and engaging user experiences. I conduct research, draw wireframes, and design high-fidelity prototypes to ensure your product is logical, beautiful, and user-friendly.",
+    stats: { rating: "4.8", label: "(20+) happy clients", enrolled: "3+ Years Experience" },
+    tools: [assets.figma],
+    features: [
+      { title: "10+ Prototypes", subtitle: "Designed from scratch" },
+      { title: "1-3 Weeks", subtitle: "Concept Delivery" },
+      { title: "User-Centric", subtitle: "Design Process" }
+    ],
+    image: assets.ui_ux_design,
+    tag: "UI/UX Design"
   },
   {
+    slug: "graphics-design",
     icon: assets.graphics_icon,
     title: "Graphics design",
     description: "Creative design solutions to enhance visual communication...",
-    link: "/service-details#graphics",
+    detailedDescription: "Elevate your brand with eye-catching graphics. I specialize in designing logos, marketing materials, social media posts, and brand identities that leave a lasting impression.",
+    stats: { rating: "5.0", label: "(40+) reviews", enrolled: "Creative Excellence" },
+    tools: [assets.canva, assets.figma],
+    features: [
+      { title: "50+ Designs", subtitle: "Created for clients" },
+      { title: "3 Days", subtitle: "Quick Delivery" },
+      { title: "Vector / Raster", subtitle: "Multiple Formats delivered" }
+    ],
+    image: assets.graphics_design,
+    tag: "Graphics Design"
   },
 ];
 
