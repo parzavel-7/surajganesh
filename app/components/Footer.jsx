@@ -13,13 +13,17 @@ const Footer = ({ isDarkMode, setIsDarkMode }) => {
         />
 
         <div className="w-max flex items-center gap-2 mx-auto">
-          <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt="" className="w-6" />
+          <Image
+            src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon}
+            alt=""
+            className="w-6"
+          />
           surajganesh404@gmail.com
         </div>
       </div>
 
       <div className="text-center sm:flex items-center justify-between border-t border-gray-400 py-6 mx-[10%] mt-12">
-        <p>&copy; Suraj Ganesh 2025. All rights reserved</p>
+        <p>&copy; Suraj Ganesh 2026. All rights reserved</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
             <a target="_blank" href="https://github.com/parzavel-7">

@@ -110,21 +110,25 @@ export const workData = [
     description: "Finance Tracker",
     bgImage: "/work-1.png",
     bgPos: "center top",
+    link: "https://fin-track-next.vercel.app/",
   },
   {
     title: "Oasis Watch",
     description: "Movie Site",
     bgImage: "/work-2.png",
+    link: "",
   },
   {
     title: "Video Projects",
     description: "Video Editing",
     bgImage: "/work-3.png",
+    link: "",
   },
   {
     title: "Graphics designing",
     description: "Graphics Design",
     bgImage: "/work-4.png",
+    link: "",
   },
 ];
 
