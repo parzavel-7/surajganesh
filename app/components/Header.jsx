@@ -9,7 +9,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
-        transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+        transition={{ duration: 0.4, type: "spring", stiffness: 100 }}
         className="flex items-center justify-center mt-20"
       >
         <Image
@@ -23,7 +23,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         className="flex items-center gap-2 text-xl  md:text-2xl mb-3 font-Ovo "
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.21 }}
+        transition={{ duration: 0.3, delay: 0.105 }}
       >
         Hi! I'm Suraj Ganesh
         <Image src={assets.hand_icon} alt="hand_icon" className="w-6" />
@@ -33,18 +33,18 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo "
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.35 }}
+        transition={{ duration: 0.4, delay: 0.175 }}
       >
-        Frontend web developer from Nepal.
+        Web Developer & Video Editor from Nepal.
       </motion.h1>
 
       <motion.p
         className="max-w-2xl mx-auto font-Ovo"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.49 }}
+        transition={{ duration: 0.3, delay: 0.245 }}
       >
-        I am a frontend web developer from Jhapa, Nepal with 2 years of
+        I am a Web Developer & Video Editor from Jhapa, Nepal with 2 years of
         experience in multiple fields.
       </motion.p>
 
@@ -52,7 +52,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
+          transition={{ duration: 0.3, delay: 0.35 }}
           href="#contact"
           className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-white dark:text-black"
         >
@@ -71,7 +71,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.84 }}
+          transition={{ duration: 0.3, delay: 0.42 }}
           href="/my_resume.pdf"
           download
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-white dark:bg-[#1c1c1c]"
@@ -89,7 +89,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         <motion.h4
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.91 }}
+          transition={{ duration: 0.25, delay: 0.455 }}
           className="my-4 text-black font-Ovo dark:text-white/80"
         >
           Visit me on
@@ -97,7 +97,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         <motion.ul
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.05 }}
+          transition={{ duration: 0.3, delay: 0.525 }}
           className="flex items-center gap-3 sm:gap-5"
         >
           {socialLinks.map(({ icon, link }, index) => (
@@ -118,4 +118,3 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
 };
 
 export default Header;
-

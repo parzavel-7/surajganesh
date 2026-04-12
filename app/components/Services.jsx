@@ -10,14 +10,14 @@ const Services = ({ isDarkMode, setIsDarkMode }) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
       id="services"
       className="w-full px-[12%] py-10 scroll-mt-20"
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.35, delay: 0.21 }}
+        transition={{ duration: 0.175, delay: 0.105 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
         What I provide
@@ -25,7 +25,7 @@ const Services = ({ isDarkMode, setIsDarkMode }) => {
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.35, delay: 0.35 }}
+        transition={{ duration: 0.175, delay: 0.175 }}
         className="text-center text-3xl font-sans"
       >
         My Services
@@ -34,17 +34,17 @@ const Services = ({ isDarkMode, setIsDarkMode }) => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.35, delay: 0.49 }}
+        transition={{ duration: 0.175, delay: 0.245 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        I provide the services including: HTML, CSS, JavaScript, React Js, Next
-        Js, PHP, SQL, Java, C, Python.
+        I provide services including Web Development, UI/UX Design, and Professional Video
+        Editing using industry-standard tools.
       </motion.p>
 
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.42, delay: 0.63 }}
+        transition={{ duration: 0.21, delay: 0.315 }}
         className="grid grid-cols-auto gap-6 my-10 "
       >
         {serviceData.map(({ icon, title, description, link }, index) => (

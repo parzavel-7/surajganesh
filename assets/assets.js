@@ -9,7 +9,7 @@ import vscode from "./vscode.png";
 import canva from "./canva.png";
 import figma from "./figma.png";
 import git from "./git.png";
-import mongodb from "./mongodb.png";
+import davinci_resolve from "./davinci_resolve.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
 import logo_dark from "./logo_dark.png";
@@ -31,6 +31,7 @@ import web_icon from "./web-icon.png";
 import mobile_icon from "./mobile-icon.png";
 import ui_icon from "./ui-icon.png";
 import graphics_icon from "./graphics-icon.png";
+import video_icon from "./video-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
@@ -61,7 +62,7 @@ export const assets = {
   canva,
   figma,
   git,
-  mongodb,
+  davinci_resolve,
   right_arrow_white,
   logo,
   logo_dark,
@@ -83,6 +84,7 @@ export const assets = {
   mobile_icon,
   ui_icon,
   graphics_icon,
+  video_icon,
   right_arrow,
   send_icon,
   right_arrow_bold,
@@ -104,23 +106,24 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    title: "FinTrack",
+    description: "Finance Tracker",
     bgImage: "/work-1.png",
+    bgPos: "center top",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Oasis Watch",
+    description: "Movie Site",
     bgImage: "/work-2.png",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Video Projects",
+    description: "Video Editing",
     bgImage: "/work-3.png",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "Graphics designing",
+    description: "Graphics Design",
     bgImage: "/work-4.png",
   },
 ];
@@ -133,11 +136,11 @@ export const serviceData = [
     link: "/service-details#web-design",
   },
   {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: assets.video_icon,
+    title: "Video Editing",
     description:
-      "Mobile app development involves creating software for mobile...",
-    link: "/service-details#mobile-app",
+      "Professional video editing services using Premiere Pro and DaVinci Resolve...",
+    link: "/service-details#video-editing",
   },
   {
     icon: assets.ui_icon,
@@ -158,9 +161,9 @@ export const infoList = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Languages",
+    title: "Languages & Tools",
     description:
-      "HTML, CSS, JavaScript, React Js, Next Js, PHP, SQL, Java, C, Python",
+      "HTML, CSS, JavaScript, React Js, Next Js, Figma, DaVinci Resolve",
   },
   {
     icon: assets.edu_icon,
@@ -178,9 +181,9 @@ export const infoList = [
 
 export const toolsData = [
   assets.vscode,
-  assets.canva,
-  assets.mongodb,
+  assets.davinci_resolve,
   assets.figma,
+  assets.canva,
   assets.git,
 ];
 

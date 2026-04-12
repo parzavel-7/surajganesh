@@ -33,14 +33,14 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.7 }}
+      transition={{ duration: 0.35 }}
       id="contact"
       className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.35, delay: 0.21 }}
+        transition={{ duration: 0.175, delay: 0.105 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
         Connect with me
@@ -48,7 +48,7 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.35, delay: 0.35 }}
+        transition={{ duration: 0.175, delay: 0.175 }}
         className="text-center text-3xl font-sans"
       >
         Get in Touch!
@@ -57,7 +57,7 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.35, delay: 0.49 }}
+        transition={{ duration: 0.175, delay: 0.245 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
         If you have any questions or would like to discuss a potential project,
@@ -69,7 +69,7 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
       <motion.form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.35, delay: 0.63 }}
+        transition={{ duration: 0.175, delay: 0.315 }}
         onSubmit={onSubmit}
         className="max-w-2xl mx-auto"
       >
@@ -77,7 +77,7 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
           <motion.input
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.42, delay: 0.84 }}
+            transition={{ duration: 0.21, delay: 0.42 }}
             type="text"
             name="name"
             placeholder="Enter your name"
@@ -87,7 +87,7 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
           <motion.input
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.42, delay: 0.98 }}
+            transition={{ duration: 0.21, delay: 0.49 }}
             type="email"
             name="email"
             placeholder="Enter your email"
@@ -99,7 +99,7 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
         <motion.textarea
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.42, delay: 1.13 }}
+          transition={{ duration: 0.21, delay: 0.565 }}
           rows="6"
           name="message"
           placeholder="Enter your message"
@@ -109,7 +109,7 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
 
         <motion.button
           whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.15 }}
           type="submit"
           className="py-3 px-8 w-max flex items-center gap-2 rounded-full bg-black/80 text-white justify-center mx-auto hover:bg-black duration-500 dark:bg-white/80 dark:text-black dark:hover:bg-white "
         >

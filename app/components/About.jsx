@@ -11,12 +11,12 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
       className="w-full px-[12%] py-10 scroll-mt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.35, delay: 0.21 }}
+        transition={{ duration: 0.175, delay: 0.105 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
         Introduction
@@ -24,7 +24,7 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.56, delay: 0.35 }}
+        transition={{ duration: 0.28, delay: 0.175 }}
         className="text-center text-3xl font-sans"
       >
         About me
@@ -33,13 +33,13 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.56 }}
+        transition={{ duration: 0.28 }}
         className="flex w-full flex-col lg:flex-row items-center gap-20 my-20"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.42 }}
+          transition={{ duration: 0.21 }}
           className="w-64 sm:w-80 rounded-3xl max-w-none"
         >
           <Image
@@ -51,12 +51,12 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.42, delay: 0.56 }}
+          transition={{ duration: 0.21, delay: 0.28 }}
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-Ovo">
-            I am an experinced Frontend web developer with over 2 years of
-            experience in multiple fields. Along this time, I have had the
+            I am an experienced Web Developer and Video Editor with over 2 years
+            of experience in multiple fields. Along this time, I have had the
             privilege of working in various startups, organizations and
             workshops, contributing to my success, growth and overall
             development.
@@ -65,7 +65,7 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
           <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.56, delay: 0.84 }}
+            transition={{ duration: 0.28, delay: 0.42 }}
             className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
           >
             {infoList.map(({ icon, iconDark, title, description }, index) => (
@@ -92,7 +92,7 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
           <motion.h4
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.35, delay: 1.12 }}
+            transition={{ duration: 0.175, delay: 0.56 }}
             className="my-6 text-gray-700 font-Ovo dark:text-white/80"
           >
             Tools I use
@@ -101,7 +101,7 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
           <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.42, delay: 1.26 }}
+            transition={{ duration: 0.21, delay: 0.63 }}
             className="flex items-center gap-3 sm:gap-5"
           >
             {toolsData.map((tool, index) => (
@@ -121,4 +121,3 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
 };
 
 export default About;
-

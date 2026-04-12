@@ -8,14 +8,14 @@ const Work = ({ isDarkMode, setIsDarkMode }) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
       id="work"
       className="w-full px-[12%] py-10 scroll-mt-20"
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.18 }}
+        transition={{ duration: 0.25, delay: 0.09 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
         My Portfolio
@@ -23,7 +23,7 @@ const Work = ({ isDarkMode, setIsDarkMode }) => {
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        transition={{ duration: 0.25, delay: 0.15 }}
         className="text-center text-3xl font-sans"
       >
         My Latest Work
@@ -32,29 +32,29 @@ const Work = ({ isDarkMode, setIsDarkMode }) => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.42 }}
+        transition={{ duration: 0.25, delay: 0.21 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        This portfolio includes some of my latest and greatest work. I have a
-        passion for creating clean, modern, and user-friendly interfaces. I have
+        This portfolio includes some of my latest and greatest work in both web development and video editing. I have a
+        passion for creating clean, modern interfaces and engaging visual content. I have
         experience with a wide range of technologies, including HTML, CSS,
-        JavaScript, React Js, Next Js, PHP, SQL, Java, C, and Python. I'm always
+        JavaScript, React Js, Next Js, Figma, and DaVinci Resolve. I'm always
         looking to improve my skills and take on new challenges.
       </motion.p>
 
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.54 }}
+        transition={{ duration: 0.3, delay: 0.27 }}
         className="grid grid-cols-auto gap-5 my-10 dark:text-black"
       >
         {workData.map((project, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.15 }}
             key={index}
-            style={{ backgroundImage: `url(${project.bgImage})` }}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group "
+            style={{ backgroundImage: `url(${project.bgImage})`, backgroundPosition: project.bgPos || 'center' }}
+            className="aspect-square bg-no-repeat bg-cover rounded-xl relative cursor-pointer group"
           >
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex justify-between items-center duration-500 group-hover:bottom-7">
               <div>
@@ -72,7 +72,7 @@ const Work = ({ isDarkMode, setIsDarkMode }) => {
       <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.72 }}
+        transition={{ duration: 0.25, delay: 0.36 }}
         href=""
         className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] rounded-full border-gray-700 py-3 px-10 mx-auto my-20 hover:bg-gray-200 hover:shadow-black duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
       >
