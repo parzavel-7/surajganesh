@@ -35,7 +35,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.175 }}
       >
-        Web Developer & Video Editor from Nepal.
+        Full-stack developer & Video Editor from Nepal.
       </motion.h1>
 
       <motion.p
@@ -44,7 +44,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.245 }}
       >
-        I am a Web Developer & Video Editor from Jhapa, Nepal with 2 years of
+        I am a Full-stack developer & Video Editor from Jhapa, Nepal with 2 years of
         experience in multiple fields.
       </motion.p>
 

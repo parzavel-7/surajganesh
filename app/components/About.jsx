@@ -55,7 +55,7 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-Ovo">
-            I am an experienced Web Developer and Video Editor with over 2 years
+            I am an experienced Full-stack developer and Video Editor with over 2 years
             of experience in multiple fields. Along this time, I have had the
             privilege of working in various startups, organizations and
             workshops, contributing to my success, growth and overall

@@ -13,6 +13,14 @@ const ovo = Ovo({
 
 export const metadata = {
   title: "Suraj Ganesh",
+  description: "Portfolio of Suraj Ganesh",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

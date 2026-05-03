@@ -117,6 +117,13 @@ export const workData = [
     title: "Oasis Watch",
     description: "Movie Site",
     bgImage: "/work-2.png",
+    link: "https://oasiswatch.vercel.app/",
+    tag: "Web Development",
+  },
+  {
+    title: "Luminary",
+    description: "AI Auditor",
+    bgImage: "/work-3.png",
     link: "",
     tag: "Web Development",
   },
@@ -138,20 +145,25 @@ export const workData = [
 
 export const serviceData = [
   {
-    slug: "web-design",
+    slug: "web-development",
     icon: assets.web_icon,
-    title: "Web design",
+    title: "Web Development",
     description: "Web development is the process of building, programming...",
-    detailedDescription: "Transform your ideas into robust, scalable, and visually stunning websites. From single-page applications to complex platforms, I use industry-leading frameworks like Next.js and React to deliver seamless digital experiences.",
-    stats: { rating: "5.0", label: "(50+) successful projects", enrolled: "5+ Years Experience" },
+    detailedDescription:
+      "Transform your ideas into robust, scalable, and visually stunning websites. From single-page applications to complex platforms, I use industry-leading frameworks like Next.js and React to deliver seamless digital experiences.",
+    stats: {
+      rating: "5.0",
+      label: "(50+) successful projects",
+      enrolled: "5+ Years Experience",
+    },
     tools: [assets.vscode, assets.git],
     features: [
-      { title: "20+ Projects", subtitle: "Live Implementations" },
+      { title: "5+ Projects", subtitle: "Live Implementations" },
       { title: "1-2 Months", subtitle: "Average Delivery Time" },
-      { title: "Responsive", subtitle: "Mobile-first Approach" }
+      { title: "Responsive", subtitle: "Mobile-first Approach" },
     ],
     image: assets.web_development,
-    tag: "Web Development"
+    tag: "Web Development",
   },
   {
     slug: "video-editing",
@@ -159,16 +171,21 @@ export const serviceData = [
     title: "Video Editing",
     description:
       "Professional video editing services using Premiere Pro and DaVinci Resolve...",
-    detailedDescription: "Learn professional video editing from scratch using industry-standard tools like DaVinci Resolve to create cinematic and engaging videos. I offer high-quality editing, color grading, and audio syncing.",
-    stats: { rating: "4.9", label: "(30+) reviews", enrolled: "100% Client Satisfaction" },
+    detailedDescription:
+      "Learn professional video editing from scratch using industry-standard tools like DaVinci Resolve to create cinematic and engaging videos. I offer high-quality editing, color grading, and audio syncing.",
+    stats: {
+      rating: "4.9",
+      label: "(30+) reviews",
+      enrolled: "100% Client Satisfaction",
+    },
     tools: [assets.davinci_resolve],
     features: [
       { title: "15+ Videos", subtitle: "Edited & Delivered" },
       { title: "7 Days", subtitle: "Standard Turnaround" },
-      { title: "4K Quality", subtitle: "Export Resolution" }
+      { title: "4K Quality", subtitle: "Export Resolution" },
     ],
-    image: assets.mobile_app, 
-    tag: "Video Editing"
+    image: assets.mobile_app,
+    tag: "Video Editing",
   },
   {
     slug: "ui-ux",
@@ -176,32 +193,42 @@ export const serviceData = [
     title: "UI/UX design",
     description:
       "UI/UX design focuses on creating a seamless user experience...",
-    detailedDescription: "Creating intuitive interfaces and engaging user experiences. I conduct research, draw wireframes, and design high-fidelity prototypes to ensure your product is logical, beautiful, and user-friendly.",
-    stats: { rating: "4.8", label: "(20+) happy clients", enrolled: "3+ Years Experience" },
+    detailedDescription:
+      "Creating intuitive interfaces and engaging user experiences. I conduct research, draw wireframes, and design high-fidelity prototypes to ensure your product is logical, beautiful, and user-friendly.",
+    stats: {
+      rating: "4.8",
+      label: "(20+) happy clients",
+      enrolled: "3+ Years Experience",
+    },
     tools: [assets.figma],
     features: [
       { title: "10+ Prototypes", subtitle: "Designed from scratch" },
       { title: "1-3 Weeks", subtitle: "Concept Delivery" },
-      { title: "User-Centric", subtitle: "Design Process" }
+      { title: "User-Centric", subtitle: "Design Process" },
     ],
     image: assets.ui_ux_design,
-    tag: "UI/UX Design"
+    tag: "UI/UX Design",
   },
   {
     slug: "graphics-design",
     icon: assets.graphics_icon,
     title: "Graphics design",
     description: "Creative design solutions to enhance visual communication...",
-    detailedDescription: "Elevate your brand with eye-catching graphics. I specialize in designing logos, marketing materials, social media posts, and brand identities that leave a lasting impression.",
-    stats: { rating: "5.0", label: "(40+) reviews", enrolled: "Creative Excellence" },
+    detailedDescription:
+      "Elevate your brand with eye-catching graphics. I specialize in designing logos, marketing materials, social media posts, and brand identities that leave a lasting impression.",
+    stats: {
+      rating: "5.0",
+      label: "(40+) reviews",
+      enrolled: "Creative Excellence",
+    },
     tools: [assets.canva, assets.figma],
     features: [
       { title: "50+ Designs", subtitle: "Created for clients" },
       { title: "3 Days", subtitle: "Quick Delivery" },
-      { title: "Vector / Raster", subtitle: "Multiple Formats delivered" }
+      { title: "Vector / Raster", subtitle: "Multiple Formats delivered" },
     ],
     image: assets.graphics_design,
-    tag: "Graphics Design"
+    tag: "Graphics Design",
   },
 ];
 

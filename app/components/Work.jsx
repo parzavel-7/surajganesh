@@ -35,47 +35,113 @@ const Work = ({ isDarkMode, setIsDarkMode }) => {
         transition={{ duration: 0.25, delay: 0.21 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        This portfolio includes some of my latest and greatest work in both web development and video editing. I have a
+        This portfolio includes some of my latest and greatest work in web development, video editing, and graphics design. I have a
         passion for creating clean, modern interfaces and engaging visual content. I have
         experience with a wide range of technologies, including HTML, CSS,
         JavaScript, React Js, Next Js, Figma, and DaVinci Resolve. I'm always
         looking to improve my skills and take on new challenges.
       </motion.p>
 
+      {/* Web Development Section */}
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.3, delay: 0.27 }}
-        className="grid grid-cols-auto gap-5 my-10 dark:text-black"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.25 }}
+        className="mt-16 mb-8"
       >
-        {workData.map((project, index) => (
-          <motion.a
-            href={project.link || "#"}
-            target={project.link ? "_blank" : "_self"}
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.15 }}
-            key={index}
-            style={{ backgroundImage: `url(${project.bgImage})`, backgroundPosition: project.bgPos || 'center' }}
-            className="aspect-square bg-no-repeat bg-cover rounded-xl relative cursor-pointer group block overflow-hidden"
-          >
-            {project.tag && (
-              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-black px-3 py-1 rounded-full text-xs font-semibold shadow-sm">
-                {project.tag}
+        <h3 className="text-2xl font-Ovo border-b border-gray-300 dark:border-gray-700 pb-2 mb-8">Web Development</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 dark:text-black">
+          {workData.filter(p => p.tag === "Web Development").map((project, index) => (
+            <motion.a
+              href={project.link || "#"}
+              target={project.link ? "_blank" : "_self"}
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.15 }}
+              key={index}
+              style={{ backgroundImage: `url(${project.bgImage})`, backgroundPosition: project.bgPos || 'center' }}
+              className="aspect-square bg-no-repeat bg-cover rounded-xl relative cursor-pointer group block overflow-hidden"
+            >
+              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex justify-between items-center duration-500 group-hover:bottom-7">
+                <div>
+                  <h2 className="font-semibold">{project.title}</h2>
+                  <p className="text-sm text-gray-700">{project.description}</p>
+                </div>
+                <div className="border rounded-full border-black aspect-square w-9 flex items-center justify-center shadow-[1px_1px_0_#000] group-hover:bg-teal-300 transition">
+                  <Image src={assets.right_arrow} alt="send_icon" className="w-5" />
+                </div>
               </div>
-            )}
-            
-            <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex justify-between items-center duration-500 group-hover:bottom-7">
-              <div>
-                <h2 className="font-semibold">{project.title}</h2>
-                <p className="text-sm text-gray-700">{project.description}</p>
+            </motion.a>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Video Editing Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
+        className="mt-16 mb-8"
+      >
+        <h3 className="text-2xl font-Ovo border-b border-gray-300 dark:border-gray-700 pb-2 mb-8">Video Editing</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 dark:text-black">
+          {workData.filter(p => p.tag === "Video Editing").map((project, index) => (
+            <motion.a
+              href={project.link || "#"}
+              target={project.link ? "_blank" : "_self"}
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.15 }}
+              key={index}
+              style={{ backgroundImage: `url(${project.bgImage})`, backgroundPosition: project.bgPos || 'center' }}
+              className="aspect-square bg-no-repeat bg-cover rounded-xl relative cursor-pointer group block overflow-hidden"
+            >
+              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex justify-between items-center duration-500 group-hover:bottom-7">
+                <div>
+                  <h2 className="font-semibold">{project.title}</h2>
+                  <p className="text-sm text-gray-700">{project.description}</p>
+                </div>
+                <div className="border rounded-full border-black aspect-square w-9 flex items-center justify-center shadow-[1px_1px_0_#000] group-hover:bg-teal-300 transition">
+                  <Image src={assets.right_arrow} alt="send_icon" className="w-5" />
+                </div>
               </div>
-              <div className="border rounded-full border-black aspect-square w-9 flex items-center justify-center shadow-[1px_1px_0_#000] group-hover:bg-teal-300 transition">
-                <Image src={assets.send_icon} alt="send_icon" className="w-5" />
+            </motion.a>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Graphics Design Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.35 }}
+        className="mt-16 mb-8"
+      >
+        <h3 className="text-2xl font-Ovo border-b border-gray-300 dark:border-gray-700 pb-2 mb-8">Graphics Design</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 dark:text-black">
+          {workData.filter(p => p.tag === "Graphics Design").map((project, index) => (
+            <motion.a
+              href={project.link || "#"}
+              target={project.link ? "_blank" : "_self"}
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.15 }}
+              key={index}
+              style={{ backgroundImage: `url(${project.bgImage})`, backgroundPosition: project.bgPos || 'center' }}
+              className="aspect-square bg-no-repeat bg-cover rounded-xl relative cursor-pointer group block overflow-hidden"
+            >
+              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex justify-between items-center duration-500 group-hover:bottom-7">
+                <div>
+                  <h2 className="font-semibold">{project.title}</h2>
+                  <p className="text-sm text-gray-700">{project.description}</p>
+                </div>
+                <div className="border rounded-full border-black aspect-square w-9 flex items-center justify-center shadow-[1px_1px_0_#000] group-hover:bg-teal-300 transition">
+                  <Image src={assets.right_arrow} alt="send_icon" className="w-5" />
+                </div>
               </div>
-            </div>
-          </motion.a>
-        ))}
+            </motion.a>
+          ))}
+        </div>
       </motion.div>
 
       <motion.a
