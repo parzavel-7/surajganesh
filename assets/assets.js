@@ -265,7 +265,7 @@ export const toolsData = [
 export const socialLinks = [
   {
     icon: assets.github,
-    link: "https://github.com/parzavel-7",
+    link: "https://github.com/suraj-ganesh",
   },
   {
     icon: assets.linkedin,

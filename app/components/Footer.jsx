@@ -26,7 +26,7 @@ const Footer = ({ isDarkMode, setIsDarkMode }) => {
         <p>&copy; Suraj Ganesh 2026. All rights reserved</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
-            <a target="_blank" href="https://github.com/parzavel-7">
+            <a target="_blank" href="https://github.com/suraj-ganesh">
               GitHub
             </a>
           </li>
