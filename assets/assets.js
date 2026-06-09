@@ -124,7 +124,7 @@ export const workData = [
     title: "Luminary",
     description: "AI Auditor",
     bgImage: "/work-3.png",
-    link: "",
+    link: "https://ai-luminary.vercel.app/",
     tag: "Web Development",
   },
   {
